@@ -1,0 +1,19 @@
+<%- include("partials/header"); %>
+
+<h1>home</h1>
+<p><%=Content%></p>
+
+
+<% extraContentsarray.forEach((extraContent)=>{ %>
+    <div>
+        <h1><%=extraContent.tittle %></h1>
+        <p><%= extraContent.bodyContent.substring(0,100) + " ..." %><a href="/posts/<%=extraContent.tittle%>">read more</a></p>
+        
+     </div>
+<%}) %>
+
+
+
+
+
+<%- include("partials/footer"); %>
